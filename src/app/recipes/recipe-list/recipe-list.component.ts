@@ -8,8 +8,8 @@ import { Recipe } from '../recipe';
 })
 export class RecipeListComponent implements OnInit {
 	recipes: Recipe[] = [
-    new Recipe('Schnitzel', 'Very tasty', 'http://startgerman.co.uk/wp-content/uploads/2015/09/Schnitzel220x140-220x140.jpg', []),
-    new Recipe('Summer Salad', 'Okayish', 'https://hugelolcdn.com/comments/1856221.jpg', [])
+    new Recipe('Schnitzel', 'Lemony', 'http://www.daringgourmet.com/wp-content/uploads/2014/03/Schnitzel-5.jpg', []),
+    new Recipe('Caesar Salad', 'Stabtastic', 'http://i.imgur.com/zI8WSMM.jpg', [])
   ];
 	@Output() recipeSelected = new EventEmitter<Recipe>();
 
