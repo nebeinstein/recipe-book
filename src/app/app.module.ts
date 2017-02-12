@@ -33,7 +33,10 @@ import { ShoppingListService } from './shopping-list/shopping-list.service';
     FormsModule,
     HttpModule
   ],
-  providers: [RecipeService,ShoppingListService],
+  providers: [
+    RecipeService,
+    ShoppingListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

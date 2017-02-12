@@ -1,19 +1,16 @@
-import { Injectable } from '@angular/core';
 import { Ingredient } from '../ingredient';
+
 export class ShoppingListService {
-private items:Ingredient[]=[];
-  constructor() {
+	private items: Ingredient[] = [];
 
-  }
-  getItems(){
-  	return this.items;
-  }
+	constructor() { }
 
-  addItems(nitems: Ingredient[]){
-  	this.items.concat(nitems);
-  }
+	getItems() {
+		return this.items;
+	}
 
-  setItems(nitems){
-  	this.items=nitems;
-  }
+	addItems(newItems: Ingredient[]){
+		Array.prototype.push.apply(this.items, newItems);
+	}
+
 }
