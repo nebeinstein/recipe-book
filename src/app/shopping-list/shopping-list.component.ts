@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { Ingredient } from '../ingredient';
 import { ShoppingListService } from './shopping-list.service';
-
 @Component({
   selector: 'rb-shopping-list',
   templateUrl: './shopping-list.component.html'
@@ -10,10 +9,10 @@ import { ShoppingListService } from './shopping-list.service';
 export class ShoppingListComponent implements OnInit {
 	items: Ingredient[] = [];
 
-	constructor(private sls: ShoppingListService) { }
+  constructor(private shoppingListServ:ShoppingListService) { }
 
-	ngOnInit() {
-  		this.items = this.sls.getItems();
-	}
+  ngOnInit() {
+  	this.items = this.shoppingListServ.getItems();
+  }
 
 }
