@@ -16,18 +16,18 @@
 <hr>
 <div class="row">
 	<div class="col-xs-12">
-		<p>Description: {{selectedRecipe?.description}}</p>
+		<p><strong>Description:</strong><br> {{selectedRecipe?.description}}</p>
 
 	</div>
 </div>
 <div class="row">
 	<div class="col-xs-12">
-		Ingredients:
-		<ul>
-			<li *ngFor='let item of selectedRecipe?.ingredients'>{{item.name}} ({{item.amount}} {{item.unit}})</li>
+		<strong>Ingredients:</strong>
+		<ul class="list-group">
+			<li class="list-group-item" *ngFor='let item of selectedRecipe?.ingredients'>{{item.name}} ({{item.amount}} {{item.unit}})</li>
 		</ul>
 	</div>
 	<div class="col-xs-12">
-		<p>Instructions: {{selectedRecipe?.instructions}}</p>
+		<p><strong>Instructions:</strong><br> {{selectedRecipe?.instructions}}</p>
 	</div>
 </div>

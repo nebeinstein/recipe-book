@@ -12,8 +12,7 @@ export class RecipeDetailComponent implements OnInit {
 
 	constructor(private sls: ShoppingListService) { }
 
-	ngOnInit() {
-	}
+	ngOnInit() { }
 
 	onAddToShoppingList(){
 		this.sls.addItems(this.selectedRecipe.ingredients);
